@@ -921,6 +921,13 @@
                   <exclude>org.apache.avro:*</exclude>
                   <exclude>org.apache.parquet:*</exclude>
                   <exclude>io.airlift:aircompressor</exclude>
+                  <!-- Server-side deps leaking in (unrelocated) via
+                       hive-standalone-metastore-server / hive-exec; Trino only uses the
+                       wrapper for serdes, metastore thrift beans and Acid/Txn utils in
+                       tests, none of which touch the ObjectStore, ZK locking or curator. -->
+                  <exclude>org.datanucleus:*</exclude>
+                  <exclude>org.apache.zookeeper:*</exclude>
+                  <exclude>org.apache.curator:*</exclude>
                 </excludes>
               </artifactSet>
               <relocations>
