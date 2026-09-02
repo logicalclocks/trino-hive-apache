@@ -60,7 +60,7 @@
     <dep.hive.version>4.1.0</dep.hive.version>
 
     <dep.avro.version>1.10.2</dep.avro.version>
-    <dep.hadoop.version>3.4.3.1-EE-RC5</dep.hadoop.version>
+    <dep.hadoop.version>3.4.3.2-EE-RC3</dep.hadoop.version>
     <dep.parquet.version>1.12.3</dep.parquet.version>
     <dep.protobuf.version>2.5.0</dep.protobuf.version>
     <dep.slf4j.version>1.7.29</dep.slf4j.version>
